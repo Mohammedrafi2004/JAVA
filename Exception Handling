@@ -1,0 +1,21 @@
+// exception handling//
+ public class Main
+ {
+  public static void main(String[] args) 
+  {
+String[] names={"Ashok", "bhuvanesh", "nagulan", "siva kumar"};
+try
+{
+System.out.println(names [5]);
+System.out.println(names [2].length());
+}
+catch(ArrayIndexOutOfBoundsException e)
+{
+System.out.println("value error: Invalid index");
+}
+catch(NullPointerException e){
+System.out.println("error: null value found");
+}
+System.out.println(" code run sucessfully");
+  }
+}
